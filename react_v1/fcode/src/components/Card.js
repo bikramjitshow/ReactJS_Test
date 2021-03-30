@@ -1,8 +1,8 @@
-function Card({title}) {
+function Card({cdata}) {
   return (
     <div className="card">
-      <h1>{title}</h1>
-      <p>Card descriptions 1...</p>
+      <h1>{cdata.title}</h1>
+      <p>{cdata.desc}</p>
     </div>
 
   );

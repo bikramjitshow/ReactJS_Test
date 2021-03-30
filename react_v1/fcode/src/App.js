@@ -1,14 +1,14 @@
 import './App.css';
+import Cards from './components/Cards';
 import Header from './components/Header';
-import Card from "./components/Card";
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
       <h1>F CODE !!</h1>
-      <Card title="Card A"></Card>
-      <Card title="Card B"></Card>
+      <Cards></Cards>
+      {/* <Card cdata={{title: 'Card A', desc: 'Description of card A'}}></Card> */}
     </div>
   );
 }

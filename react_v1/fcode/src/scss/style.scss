@@ -1,5 +1,17 @@
 .card {
-  width: 300px;
-  background-color: #f8f8f8;
-  
+  min-width: 300px;
+  background-color: #73d856;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  margin: 10px;
+}
+
+.no-data-txt {
+  font-size: 20px;
+  font-weight: bold;
+  background: #ffcc98;
+  padding: 30px;
+  color: #ff6a00;
 }

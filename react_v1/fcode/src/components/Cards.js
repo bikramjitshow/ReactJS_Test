@@ -17,8 +17,6 @@ function Cards() {
     <div className="cards">
       <h1>All Cards</h1>
       <div className="card-wrap">
-        {/* <Card cdata={{title: 'Card A', desc: 'Description of card A'}}></Card> */}
-        {/* <Card cdata={{title: 'Card B', desc: 'Description of card B'}}></Card> */}
 
         {
           cdatas.length > 0 ?

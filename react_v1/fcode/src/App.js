@@ -1,7 +1,15 @@
 import "./App.css";
+import Swal from "sweetalert2";
+import { BrowserRouter as Router, Route, NavLink, Switch } from 'react-router-dom'
+
+
 import Cards from "./components/Cards";
 import Header from "./components/Header";
-import Swal from "sweetalert2";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Courses from "./components/Courses";
+import Home from "./components/Home";
+import Notfound from "./components/Notfound";
 
 function App() {
   const btnHandel = () => {
@@ -16,17 +24,37 @@ function App() {
 
   return (
     <div className="App">
-      <Header></Header>
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-sm-12">
-            <Cards></Cards>
-            <button className="btn btn-success" onClick={btnHandel}>
+      <Router>
+        <Header></Header>
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-sm-12">
+              <Switch>
+                <Route exact path='/'>
+                  <Home></Home>
+                </Route>
+                <Route path='/about'>
+                  <About></About>
+                </Route>
+                <Route path='/contact'>
+                  <Contact></Contact>
+                </Route>
+                <Route path='/courses'>
+                  <Courses></Courses>
+                </Route>
+                <Route path="*">
+                  <Notfound></Notfound>
+                </Route>
+              </Switch>
+
+              {/* <Cards></Cards> */}
+              {/* <button className="btn btn-success" onClick={btnHandel}>
               Click me
-            </button>
+            </button> */}
+            </div>
           </div>
         </div>
-      </div>
+      </Router>
     </div>
   );
 }

@@ -5,14 +5,14 @@ import Card from './Card';
 function Courses() {
 
   const [cdatas, setcdatas] = useState([
-    { title: 'Computer Science: Programming with a Purpose', desc: 'Description of card A' },
-    { title: 'Card B', desc: 'Description of card B' },
-    { title: 'Card C', desc: 'Description of card C' },
-    { title: 'Card D', desc: 'Description of card D' },
-    { title: 'Card E', desc: 'Description of card E' },
-    { title: 'Card F', desc: 'Description of card F' },
-    { title: 'Card G', desc: 'Description of card G' },
-    { title: 'Card H', desc: 'Description of card H' },
+    { title: 'Computer Science', desc: 'Description of card A' },
+    { title: 'Networking', desc: 'Description of card B' },
+    { title: 'Master of C', desc: 'Description of card C' },
+    { title: 'Basic C++', desc: 'Description of card D' },
+    { title: 'Phython Programming', desc: 'Description of card E' },
+    { title: 'Java Programming', desc: 'Description of card F' },
+    { title: 'React JS', desc: 'Description of card G' },
+    { title: 'Machine Learning', desc: 'Description of card H' },
   ]);
 
   return (

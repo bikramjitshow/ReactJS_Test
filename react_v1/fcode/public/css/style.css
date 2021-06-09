@@ -1,3 +1,10 @@
+.cont-wrap.about-cont-wrap {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 50px;
+}
+
 .contact-form {
   width: 450px;
   text-align: left;

@@ -9,7 +9,7 @@ export default function Header() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <Link className="navbar-brand" to="/">Brand</Link>
+          <Link className="navbar-brand" to="/"><i class="far fa-smile"></i> Bikram</Link>
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <NavLink className="nav-link" to="/">Home</NavLink>

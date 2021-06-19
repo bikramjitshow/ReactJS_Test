@@ -16,13 +16,10 @@ export default function Home() {
     setusers(res.data);
   }
 
-
-
-
   return (
     <div className="home">
       <h1 className="main-heading">ALL USERS</h1>
-      <div className="table-responsive shadow rounded p-3 my-3">
+      <div className="table-responsive border-top bg-white border-5 border-primary shadow rounded p-3 my-3">
         <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-3">
           <button type="button" class="btn btn-primary"><i class="fas fa-user-plus"></i> Add User</button>
         </div>

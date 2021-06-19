@@ -21,9 +21,9 @@ export default function Home() {
 
   return (
     <div className="home">
-      <h1>ALL USERS</h1>
+      <h1 className="main-heading">ALL USERS</h1>
       <div className="table-responsive shadow rounded p-3 my-3">
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-4">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-3">
           <button type="button" class="btn btn-primary"><i class="fas fa-user-plus"></i> Add User</button>
         </div>
         <table className="table table-bordered border-primary table-hover mb-0">

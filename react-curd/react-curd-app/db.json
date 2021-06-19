@@ -1,0 +1,42 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Ram Roy",
+      "phone": "9000000009",
+      "email": "ram@gmail.com",
+      "address": "Kolkata"
+    },
+    {
+      "id": 2,
+      "name": "Laksman Sen",
+      "phone": "9001002009",
+      "email": "laksman@gmail.com",
+      "address": "Mumbai"
+    },
+    {
+      "id": 3,
+      "name": "Sham Sharma",
+      "phone": "8501002009",
+      "email": "sham@gmail.com",
+      "address": "Delhi"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

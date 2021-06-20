@@ -20,8 +20,8 @@ export default function Home() {
     <div className="home">
       <h1 className="main-heading">ALL USERS</h1>
       <div className="table-responsive border-top bg-white border-5 border-primary shadow rounded p-3 my-3">
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-3">
-          <button type="button" class="btn btn-primary"><i class="fas fa-user-plus"></i> Add User</button>
+        <div className="d-grid gap-2 d-md-flex justify-content-md-end mb-3">
+          <button type="button" className="btn btn-primary"><i className="fas fa-user-plus"></i> Add User</button>
         </div>
         <table className="table table-bordered border-primary table-hover mb-0">
           <thead className="table-dark">
@@ -44,9 +44,9 @@ export default function Home() {
                   <td>{user.email}</td>
                   <td>{user.address}</td>
                   <td>
-                    <button type="button" class="btn btn-outline-primary btn-sm me-2"><i class="far fa-eye"></i> View</button>
-                    <button type="button" class="btn btn-outline-warning btn-sm me-2"><i class="far fa-edit"></i> Edit</button>
-                    <button type="button" class="btn btn-outline-danger btn-sm"><i class="far fa-trash-alt"></i> Delete</button>
+                    <button type="button" className="btn btn-outline-primary btn-sm me-2"><i className="far fa-eye"></i> View</button>
+                    <button type="button" className="btn btn-outline-warning btn-sm me-2"><i className="far fa-edit"></i> Edit</button>
+                    <button type="button" className="btn btn-outline-danger btn-sm"><i className="far fa-trash-alt"></i> Delete</button>
                   </td>
                 </tr>
               ))

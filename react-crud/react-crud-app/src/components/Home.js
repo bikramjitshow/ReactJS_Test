@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 export default function Home() {
@@ -19,9 +20,9 @@ export default function Home() {
   return (
     <div className="home">
       <h1 className="main-heading">ALL USERS</h1>
-      <div className="table-responsive border-top bg-white border-5 border-primary shadow rounded p-3 my-3">
+      <div className="table-responsive border-top bg-light-blue border-5 border-primary shadow rounded p-3 my-3">
         <div className="d-grid gap-2 d-md-flex justify-content-md-end mb-3">
-          <button type="button" className="btn btn-primary"><i className="fas fa-user-plus"></i> Add User</button>
+          <Link to="/user/add" type="button" className="btn btn-primary"><i className="fas fa-user-plus"></i> Add User</Link>
         </div>
         <table className="table table-bordered border-primary table-hover mb-0">
           <thead className="table-dark">

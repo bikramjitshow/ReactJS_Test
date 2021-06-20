@@ -1,17 +1,16 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 // import Swal from 'sweetalert2';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Header from './components/Header';
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
-import Notfound from './components/Notfound';
-
+import Header from "./components/Header";
+import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Notfound from "./components/Notfound";
+import Adduser from "./components/users/Adduser";
 
 function App() {
-
   // const btnHandel = () => {
   //   // Swal.fire({
   //   //   position: "center",
@@ -48,18 +47,11 @@ function App() {
           <div className="row">
             <div className="col-sm-12">
               <Switch>
-                <Route exact path="/">
-                  <Home></Home>
-                </Route>
-                <Route path="/about">
-                  <About></About>
-                </Route>
-                <Route path="/contact">
-                  <Contact></Contact>
-                </Route>
-                <Route path="*">
-                  <Notfound></Notfound>
-                </Route>
+                <Route exact path="/" component={Home}></Route>
+                <Route exact path="/about" component={About}></Route>
+                <Route exact path="/contact" component={Contact}></Route>
+                <Route exact path="/user/add" component={Adduser}></Route>
+                <Route component={Notfound}></Route>
               </Switch>
               {/* <button className="btn btn-success" onClick={btnHandel}>
                 Alert

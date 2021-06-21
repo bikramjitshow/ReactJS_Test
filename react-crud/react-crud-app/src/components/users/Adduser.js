@@ -31,7 +31,7 @@ export default function Adduser() {
           </div>
         </div>
         <div className="col-12">
-          <button type="submit" className="btn btn-success my-3"><i className="fas fa-plus"></i> Add User</button>
+          <button type="submit" className="btn btn-success my-3"><i className="fas fa-plus"></i> Add </button>
         </div>
       </form>
 
